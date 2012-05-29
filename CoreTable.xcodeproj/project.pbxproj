@@ -22,12 +22,12 @@
 		4CFF939E1574C6190080E07C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		4CFF939F1574C6190080E07C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		4CFF93A01574C6190080E07C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		4CFF93A31574C6190080E07C /* CoreTable-Info.plist */ = {isa = PBXFileReference; path = "CoreTable-Info.plist"; sourceTree = "<group>"; };
+		4CFF93A31574C6190080E07C /* CoreTable-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreTable-Info.plist"; sourceTree = "<group>"; };
 		4CFF93A51574C6190080E07C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4CFF93A71574C6190080E07C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4CFF93A91574C61A0080E07C /* CoreTable-Prefix.pch */ = {isa = PBXFileReference; path = "CoreTable-Prefix.pch"; sourceTree = "<group>"; };
+		4CFF93A91574C61A0080E07C /* CoreTable-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreTable-Prefix.pch"; sourceTree = "<group>"; };
 		4CFF93AB1574C61A0080E07C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		4CFF93AD1574C61A0080E07C /* COAppDelegate.h */ = {isa = PBXFileReference; path = COAppDelegate.h; sourceTree = "<group>"; };
+		4CFF93AD1574C61A0080E07C /* COAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = COAppDelegate.h; sourceTree = "<group>"; };
 		4CFF93AE1574C61A0080E07C /* COAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = COAppDelegate.m; sourceTree = "<group>"; };
 		4CFF93B11574C61A0080E07C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		4CFF93B41574C61A0080E07C /* CoreTable.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreTable.xcdatamodel; sourceTree = "<group>"; };

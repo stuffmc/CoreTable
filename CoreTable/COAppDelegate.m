@@ -16,7 +16,9 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+//    NSManagedObject *blog = [NSEntityDescription insertNewObjectForEntityForName:@"Foo" inManagedObjectContext:self.managedObjectContext];
+//    [blog setValue:[[NSDate date] description] forKey:@"bar"];
+//    [self saveAction:nil];
 }
 
 // Returns the directory the application uses to store the Core Data store file. This code uses a directory named "biz.pomcast.CoreTable" in the user's Application Support directory.
@@ -56,7 +58,8 @@
     NSURL *applicationFilesDirectory = [self applicationFilesDirectory];
     NSError *error = nil;
     
-    NSDictionary *properties = [applicationFilesDirectory resourceValuesForKeys:@[NSURLIsDirectoryKey] error:&error];
+//    NSDictionary *properties = [applicationFilesDirectory resourceValuesForKeys:@[NSURLIsDirectoryKey] error:&error];
+    NSDictionary *properties = [applicationFilesDirectory resourceValuesForKeys:[NSArray arrayWithObject:NSURLIsDirectoryKey] error:&error];
     
     if (!properties) {
         BOOL ok = NO;
