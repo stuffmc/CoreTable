@@ -102,18 +102,20 @@
         return _managedObjectContext;
     }
     
-    NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
-    if (!coordinator) {
-        NSMutableDictionary *dict = [NSMutableDictionary dictionary];
-        [dict setValue:@"Failed to initialize the store" forKey:NSLocalizedDescriptionKey];
-        [dict setValue:@"There was an error building up the data file." forKey:NSLocalizedFailureReasonErrorKey];
-        NSError *error = [NSError errorWithDomain:@"YOUR_ERROR_DOMAIN" code:9999 userInfo:dict];
-        [[NSApplication sharedApplication] presentError:error];
-        return nil;
-    }
-    _managedObjectContext = [[NSManagedObjectContext alloc] init];
-    [_managedObjectContext setPersistentStoreCoordinator:coordinator];
-
+//    NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
+//    if (!coordinator) {
+//        NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+//        [dict setValue:@"Failed to initialize the store" forKey:NSLocalizedDescriptionKey];
+//        [dict setValue:@"There was an error building up the data file." forKey:NSLocalizedFailureReasonErrorKey];
+//        NSError *error = [NSError errorWithDomain:@"YOUR_ERROR_DOMAIN" code:9999 userInfo:dict];
+//        [[NSApplication sharedApplication] presentError:error];
+//        return nil;
+//    }
+//    _managedObjectContext = [[NSManagedObjectContext alloc] init];
+//    [_managedObjectContext setPersistentStoreCoordinator:coordinator];
+    [MagicalRecord setupCoreDataStack];
+    _managedObjectContext = [NSManagedObjectContext MR_defaultContext];
+    
     return _managedObjectContext;
 }
 
