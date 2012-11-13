@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1467" systemVersion="12A206j" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="12C3006" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Boy" syncable="YES">
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="foo" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Foo" inverseName="boys" inverseEntity="Foo" syncable="YES"/>
+    </entity>
     <entity name="Foo" syncable="YES">
         <attribute name="bar" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="boys" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Boy" inverseName="foo" inverseEntity="Boy" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Foo" positionX="160" positionY="192" width="128" height="60"/>
+        <element name="Foo" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="Boy" positionX="160" positionY="192" width="128" height="75"/>
     </elements>
 </model>
